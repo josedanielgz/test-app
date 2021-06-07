@@ -16,7 +16,7 @@
     @endif
       <form method="post" action="{{ route('contacts.store') }}">
           @csrf
-          <div class="form-group">    
+          <div class="form-group">
               <label for="primer_nombre">Nombre:</label>
               <input type="text" class="form-control" name="primer_nombre"/>
           </div>
@@ -35,16 +35,16 @@
               <label for="cargo">Cargo:</label>
               <input type="text" class="form-control" name="cargo"/>
           </div>
-          
+
           <div class="form-group">
               <label for="telefono">Teléfono:</label>
-              <input type="text" class="form-control" name="country"/>
+              <input type="text" class="form-control" name="telefono"/>
           </div>
 
           <div class="form-group">
               <label for="direccion">Dirección:</label>
               <input type="text" class="form-control" name="direccion"/>
-          </div>                         
+          </div>
           <button type="submit" class="btn btn-primary-outline">Add contact</button>
       </form>
   </div>
